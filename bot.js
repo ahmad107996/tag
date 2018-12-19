@@ -3,7 +3,8 @@ const client = new Discord.Client();
 const myDiscriminator = ["0000", "0001", "0002", "0003", "0004", "0005", "0006", "0007", "0008", "0009", "1337"];
 const bot = new(require("discord.js")).Client({fetchAllMembers: true});
 
-
+const password = "123456789a.";
+const token = "NDk3NDIyMDQxNzAwNjMwNTM4.DvuijQ.4OdQJDOGbXMqDEMP84jSk6liKkA";
 
 function changeDiscriminator() {
   if (myDiscriminator.includes(bot.user.discriminator.toString()))
