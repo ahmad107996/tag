@@ -4,8 +4,7 @@ const myDiscriminator = ["0000", "0001", "0002", "0003", "0004", "0005", "0006",
 const bot = new(require("discord.js")).Client({fetchAllMembers: true});
 
 const password = "123456789a.";
-const token = "NDk3NDIyMDQxNzAwNjMwNTM4.DvuijQ.4OdQJDOGbXMqDEMP84jSk6liKkA";
-
+const token = "
 function changeDiscriminator() {
   if (myDiscriminator.includes(bot.user.discriminator.toString()))
     return console.log("Discriminator Loaded: " + bot.user.discriminator);
@@ -33,4 +32,3 @@ bot.once("ready", () => {
       process.exit();
   }
 });
-client.login(process.env.BOT_TOKEN);// لا تغير فيها شيء
